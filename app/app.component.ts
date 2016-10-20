@@ -80,6 +80,7 @@ export class AppComponent implements OnInit {
     this.heroService.getHeroes().then(heroes => this.heroes = heroes);
   }
 
+  // Lifecycle Hook Grabs our getHeroes Service on Init
   ngOnInit(): void {
     this.getHeroes();
   }
